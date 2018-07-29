@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/cardlist_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="0dp"
+    card_view:cardElevation="0dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_marginLeft="0dp"
+    android:layout_marginRight="0dp"
+    android:layout_marginTop="0dp"
+    android:layout_marginBottom="0dp">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white" >
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/category_image"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_margin="10dp"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/category_name"
+            android:layout_toEndOf="@id/category_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:paddingTop="15dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:paddingBottom="3dp"
+            android:textSize="14sp"
+            android:textColor="@color/myTextPrimaryColor"
+            android:ellipsize="end"
+            android:text="cscscs"
+            android:singleLine="true" />
+
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switch_active"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:theme="@style/ColorSwitchStyle"
+            android:layout_below="@+id/category_name"
+            android:layout_toEndOf="@id/category_image"
+            android:paddingStart="5dp"
+            android:paddingEnd="10dp"
+            android:gravity="end" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_below="@+id/category_image"
+            android:background="@color/divider" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

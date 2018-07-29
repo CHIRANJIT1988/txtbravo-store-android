@@ -1,0 +1,32 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity" >
+
+    <item
+        android:id="@+id/action_add_product"
+        android:title="@string/action_add_product"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_loupe_white_24dp"
+        app:showAsAction="always|withText" />
+
+    <item
+        android:id="@+id/action_sync_category"
+        android:title="@string/action_sync_category"
+        android:orderInCategory="1"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_sync_sub_category"
+        android:title="@string/action_sync_sub_category"
+        android:orderInCategory="1"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_sync_product"
+        android:title="@string/action_sync_product"
+        android:orderInCategory="1"
+        app:showAsAction="never" />
+
+</menu>

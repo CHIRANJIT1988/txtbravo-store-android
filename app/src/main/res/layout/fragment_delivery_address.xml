@@ -1,0 +1,156 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/dummyfrag_bg"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:paddingLeft="@dimen/activity_horizontal_margin"
+	android:paddingRight="@dimen/activity_horizontal_margin"
+	android:paddingTop="@dimen/activity_vertical_margin"
+	android:paddingBottom="@dimen/activity_vertical_margin">
+
+
+	<android.support.v4.widget.NestedScrollView
+		android:id="@+id/scrollableContents"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior"
+		android:scrollbars="none" >
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical" >
+
+
+			<ImageButton
+				android:id="@+id/ibCall"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:background="@drawable/ib_selector"
+				android:cropToPadding="true"
+				android:padding="10dp"
+				android:layout_marginTop="20dp"
+				android:layout_marginBottom="20dp"
+				android:src="@drawable/ic_phone_pic"
+				android:contentDescription="@null"
+				android:stateListAnimator="@animator/fab_elevation_selector" />
+
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="20dp"
+				android:orientation="horizontal" >
+
+				<ImageButton
+					android:id="@+id/ib_order_packed"
+					android:background="@drawable/ib_order_progress"
+					android:layout_width="40dp"
+					android:layout_height="40dp"
+					android:layout_gravity="center"
+					android:padding="10dp"
+					android:src="@drawable/ic_gift_white_18dp"
+					android:contentDescription="@null" />
+
+				<View
+					android:layout_width="10dp"
+					android:layout_height="5dp"
+					android:background="@color/myTextSecondaryColor"
+					android:layout_gravity="center"
+					android:layout_weight=".5" />
+
+				<ImageButton
+					android:id="@+id/ib_order_handover"
+					android:background="@drawable/ib_order_progress"
+					android:layout_width="40dp"
+					android:layout_height="40dp"
+					android:layout_gravity="center"
+					android:padding="10dp"
+					android:src="@drawable/ic_walk_white_18dp"
+					android:contentDescription="@null" />
+
+				<View
+					android:layout_width="10dp"
+					android:layout_height="5dp"
+					android:background="@color/myTextSecondaryColor"
+					android:layout_gravity="center"
+					android:layout_weight=".5" />
+
+				<ImageButton
+					android:id="@+id/ib_order_delivered"
+					android:background="@drawable/ib_order_progress"
+					android:layout_width="40dp"
+					android:layout_height="40dp"
+					android:layout_gravity="center"
+					android:padding="10dp"
+					android:src="@drawable/ic_home_white_18dp"
+					android:contentDescription="@null" />
+
+
+			</LinearLayout>
+
+
+			<TextView
+				android:id="@+id/delivery_status"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:textStyle="bold"
+				android:textSize="14sp"
+				android:gravity="center"
+				android:text=""
+				android:textColor="@color/myTextPrimaryColor"
+				android:layout_weight="1" />
+
+
+			<android.support.v7.widget.CardView
+				xmlns:android="http://schemas.android.com/apk/res/android"
+				xmlns:card_view="http://schemas.android.com/apk/res-auto"
+				android:orientation="vertical"
+				android:id="@+id/card_login"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:minHeight="50dp"
+				card_view:cardCornerRadius="2dp"
+				android:layout_marginTop="30dp"
+				card_view:cardElevation="0dp"
+				android:foreground="?android:attr/selectableItemBackground" >
+
+
+				<LinearLayout
+					android:id="@+id/linear_main"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:orientation="vertical"
+					android:padding="8dp" >
+
+					<TextView
+						android:id="@+id/name"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textColor="@color/myTextPrimaryColor"
+						android:textStyle="bold"
+						android:textSize="14sp" />
+
+					<TextView
+						android:id="@+id/address"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="14sp" />
+
+					<TextView
+						android:id="@+id/mobile_no"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="14sp" />
+
+				</LinearLayout>
+
+			</android.support.v7.widget.CardView>
+
+		</LinearLayout>
+
+	</android.support.v4.widget.NestedScrollView>
+
+</FrameLayout>

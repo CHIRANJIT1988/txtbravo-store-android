@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_orders"
+            android:icon="@drawable/ic_email_open_grey600_24dp"
+            android:title="All Orders" />
+
+        <item
+            android:id="@+id/nav_notification"
+            android:icon="@drawable/ic_bell_grey600_24dp"
+            android:title="Notifications" />
+
+        <item
+            android:id="@+id/nav_faq"
+            android:icon="@drawable/ic_message_text_grey600_24dp"
+            android:title="FAQs" />
+
+        <item
+            android:id="@+id/nav_about_us"
+            android:icon="@drawable/ic_information_grey600_24dp"
+            android:title="About Us" />
+
+        <item
+            android:id="@+id/nav_terms_and_conditions"
+            android:icon="@drawable/ic_file_document_grey600_24dp"
+            android:title="Terms &amp; Conditions" />
+
+    </group>
+
+    <item android:title="Account Management">
+        <menu>
+
+            <item
+                android:id="@+id/nav_manage_product"
+                android:icon="@drawable/ic_loupe_grey600_24dp"
+                android:title="Add Product" />
+
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/ic_store_grey600_24dp"
+                android:title="Edit Store Profile" />
+
+            <item
+                android:id="@+id/nav_configuration"
+                android:icon="@drawable/ic_wrench_grey600_24dp"
+                android:title="Store Configuration" />
+
+            <item
+                android:id="@+id/nav_change_password"
+                android:icon="@drawable/ic_key_variant_grey600_24dp"
+                android:title="Change Password" />
+
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_power_grey600_24dp"
+                android:title="Sign Out" />
+
+        </menu>
+    </item>
+
+    <item android:title="Communicate">
+        <menu>
+
+            <item
+                android:id="@+id/nav_promote"
+                android:icon="@drawable/ic_pen_grey600_24dp"
+                android:title="Promote your Business" />
+
+            <item
+                android:id="@+id/nav_share_buyer_app"
+                android:icon="@drawable/ic_share_variant_grey600_24dp"
+                android:title="Share Buyer App" />
+
+            <item
+                android:id="@+id/nav_share_seller_app"
+                android:icon="@drawable/ic_share_variant_grey600_24dp"
+                android:title="Share Seller App" />
+
+            <item
+                android:id="@+id/nav_rate"
+                android:icon="@drawable/ic_star_half_grey600_24dp"
+                android:title="Rate this App" />
+
+        </menu>
+    </item>
+
+</menu>

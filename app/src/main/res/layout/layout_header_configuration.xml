@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/myfab_main"
+    style="@style/LayoutFooterStyle"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:background="@color/myPrimaryColor">
+
+    <ImageButton
+        android:id="@+id/ib_category"
+        android:background="@drawable/ib_order_progress"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:onClick="onClick"
+        android:src="@drawable/ic_close_white_24dp"
+        android:contentDescription="@null" />
+
+    <View
+        android:layout_width="10dp"
+        android:layout_height="5dp"
+        android:background="@android:color/white"
+        android:layout_gravity="center"
+        android:layout_weight=".5" />
+
+    <ImageButton
+        android:id="@+id/ib_profile"
+        android:background="@drawable/ib_order_progress"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:src="@drawable/ic_close_white_24dp"
+        android:contentDescription="@null" />
+
+    <View
+        android:layout_width="10dp"
+        android:layout_height="5dp"
+        android:background="@android:color/white"
+        android:layout_gravity="center"
+        android:layout_weight=".5" />
+
+    <ImageButton
+        android:id="@+id/ib_address"
+        android:background="@drawable/ib_order_progress"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:src="@drawable/ic_close_white_24dp"
+        android:contentDescription="@null" />
+
+</LinearLayout>
